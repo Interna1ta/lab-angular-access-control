@@ -1,3 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+<header id="site-header">
+  <div class="container">
+    <nav>
+      <a [routerLink]="['/home']">Home</a>
+      <a [routerLink]="['/about']">About</a>
+    </nav>
+  </div>
+</header>
+
+<div id="site-main" class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<footer id="site-header">
+  <div class="container">
+    <p>Ironhack 2018 whatever</p>
+  </div>
+</footer>
